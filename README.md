@@ -99,4 +99,7 @@ _✨ 推送arxiv上每日最新论文的插件 ✨_
 `arxiv push [category]` 立即获取`[category]`中所有类别的当日推送。如果`[category]`没有指定，那么会尝试推送您订阅中的所有领域。
 
 ### 效果图
-如果有效果图的话
+
+![preview](./pic/preview.jpg)
+
+![preview](./pic/preview2.png)
