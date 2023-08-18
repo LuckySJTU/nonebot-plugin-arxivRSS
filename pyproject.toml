@@ -1,6 +1,6 @@
 [project]
 name = "nonebot_plugin_arxivRSS"
-version = "0.1.1"
+version = "0.1.1rc"
 description = "Plugin of Nonebot2. Subscribe and push Arxiv RSS daliy."
 authors = [
     {name = "LuckyOrz", email = "lucky.wangyixuan@gmail.com"},
