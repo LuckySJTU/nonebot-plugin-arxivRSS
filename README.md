@@ -100,6 +100,6 @@ _✨ 推送arxiv上每日最新论文的插件 ✨_
 
 ### 效果图
 
-![preview](./pic/preview.jpg)
+![preview](./preview.jpg)
 
-![preview](./pic/preview2.png)
+![preview](./preview2.png)
