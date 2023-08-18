@@ -6,9 +6,9 @@
 
 <div align="center">
 
-# nonebot-plugin-example
+# nonebot-plugin-arxivRSS
 
-_✨ NoneBot 插件简单描述 ✨_
+_✨ 推送每日arxiv上最新论文的插件 ✨_
 
 
 <a href="./LICENSE">
@@ -47,7 +47,7 @@ _✨ NoneBot 插件简单描述 ✨_
 
 ## 📖 介绍
 
-这里是插件的详细介绍部分
+这个插件调用arxiv的RSS订阅源，用于每天定时推送arxiv当天的新论文。目前仅支持私聊。
 
 ## 💿 安装
 
@@ -90,20 +90,36 @@ _✨ NoneBot 插件简单描述 ✨_
 
 </details>
 
-## ⚙️ 配置
-
-在 nonebot2 项目的`.env`文件中添加下表中的必填配置
-
-| 配置项 | 必填 | 默认值 | 说明 |
-|:-----:|:----:|:----:|:----:|
-| 配置项1 | 是 | 无 | 配置说明 |
-| 配置项2 | 否 | 无 | 配置说明 |
 
 ## 🎉 使用
-### 指令表
-| 指令 | 权限 | 需要@ | 范围 | 说明 |
-|:-----:|:----:|:----:|:----:|:----:|
-| 指令1 | 主人 | 否 | 私聊 | 指令说明 |
-| 指令2 | 群员 | 是 | 群聊 | 指令说明 |
+
+**目前仅支持私聊**
+
+首先使用`arxiv set <hh> <mm>`设定每日推送时间。
+
+然后使用`arxiv add <category>`添加您关注的领域。`<category>`是arxiv官方对论文领域的分类，例如`cs`代表Computer Science，`cs.CL`代表Computation and Language。`<category>`可以是单独的领域，也可以是多个领域，领域间使用空格分开。[此处](https://arxiv.org/category_taxonomy)可以查看所有领域。
+
+此时您已经完成了基本的设置，您将会在每日`<hh>:<mm>`收到来自arxivRSS的当日推送。
+
+您还可以通过`arxiv push [category]`指令立刻获取arxivRSS的当日推送。如果不提供`[category]`，则推送您订阅中的所有领域。
+
+### 所有指令
+
+`arxiv` 显示所有指令
+
+`arxiv add <category>` 添加`<category>`至您的订阅。
+
+`arxiv del <category>` 从您的订阅中删除`<category>`。
+
+`arxiv set <hh> <mm>` 设定您的推送时间为hh:mm
+
+`arxiv cancel` 取消订阅。
+
+`arxiv show` 查看您的订阅类别和推送时间。
+
+`arxiv list` 查看所有可用的领域。
+
+`arxiv push [category]` 立即获取`[category]`中所有类别的当日推送。如果`[category]`没有指定，那么会尝试推送您订阅中的所有领域。
+
 ### 效果图
 如果有效果图的话
