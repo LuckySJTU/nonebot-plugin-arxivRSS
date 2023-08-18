@@ -8,7 +8,7 @@
 
 # nonebot-plugin-arxivRSS
 
-_✨ 推送每日arxiv上最新论文的插件 ✨_
+_✨ 推送arxiv上每日最新论文的插件 ✨_
 
 
 <a href="./LICENSE">
