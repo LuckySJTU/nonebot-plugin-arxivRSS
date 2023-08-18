@@ -70,11 +70,11 @@ _✨ 推送arxiv上每日最新论文的插件 ✨_
 
 ## 🎉 使用
 
-**目前仅支持私聊**
+⚠️**目前仅支持私聊**⚠️
 
 首先使用`arxiv set <hh> <mm>`设定每日推送时间。
 
-然后使用`arxiv add <category>`添加您关注的领域。`<category>`是arxiv官方对论文领域的分类，例如`cs`代表Computer Science，`cs.CL`代表Computation and Language。`<category>`可以是单独的领域，也可以是多个领域，领域间使用空格分开。[此处](https://arxiv.org/category_taxonomy)可以查看所有领域。
+然后使用`arxiv add <category>`添加您关注的领域。`<category>`是arxiv官方对论文领域的分类，例如`cs`代表Computer Science，`cs.CL`代表Computation and Language。**`<category>`可以是单独的领域，也可以是多个领域，领域间使用空格分开。**[此处](https://arxiv.org/category_taxonomy)可以查看所有领域。
 
 此时您已经完成了基本的设置，您将会在每日`<hh>:<mm>`收到来自arxivRSS的当日推送。
 
