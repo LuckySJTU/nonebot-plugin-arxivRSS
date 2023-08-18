@@ -34,6 +34,7 @@ __plugin_meta__ = PluginMetadata(
         "version": "0.1.0",
     },
     homepage="https://github.com/LuckySJTU/nonebot-plugin-arxivRSS/",
+    supported_adapters={"~onebot.v11"},
 )
 
 require("nonebot_plugin_apscheduler")
