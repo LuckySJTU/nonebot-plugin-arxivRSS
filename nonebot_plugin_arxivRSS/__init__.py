@@ -39,8 +39,13 @@ __plugin_meta__ = PluginMetadata(
 
 require("nonebot_plugin_apscheduler")
 from nonebot_plugin_apscheduler import scheduler
+require("nonebot_plugin_localstore")
+import nonebot_plugin_localstore as store
 
-subscribe = Path(__file__).parent / "subscribe.json"
+# subscribe = Path(__file__).parent / "subscribe.json"
+# subscribe_list = json.loads(subscribe.read_text("utf-8")) if subscribe.is_file() else {}
+
+subscribe = store.get_data_file("arxivRSS", "subscribe.json")
 subscribe_list = json.loads(subscribe.read_text("utf-8")) if subscribe.is_file() else {}
 
 def save_subscribe():

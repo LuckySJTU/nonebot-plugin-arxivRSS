@@ -1,6 +1,6 @@
 [project]
 name = "nonebot_plugin_arxivRSS"
-version = "0.1.3"
+version = "0.1.4"
 description = "Plugin of Nonebot2. Subscribe and push Arxiv RSS daliy."
 authors = [
     {name = "LuckyOrz", email = "lucky.wangyixuan@gmail.com"},
@@ -11,6 +11,7 @@ dependencies = [
     "httpx>=0.23.3",
     "nonebot-adapter-onebot",
     "nonebot_plugin_apscheduler",
+    "nonebot_plugin_localstore",
 ]
 requires-python = ">=3.8"
 readme = "README.md"
